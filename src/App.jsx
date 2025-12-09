@@ -10,7 +10,7 @@ import {
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = "SHIV∆M";
+    document.title = "Gaurav";
   }, []);
 
   const [isDark, setIsDark] = useState(false);
@@ -139,7 +139,7 @@ const Portfolio = () => {
         </div>
 
         <a 
-          href="https://drive.google.com/file/d/1jSWNz_iAt6LxBRdSj8ZYFL9F5VNx33W0/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1OpDm3WplLjDBTwpeH1_mIkXHeBq9K3uW/view?usp=drive_link"
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-1 cursor-pointer hover:text-yellow-500 transition-colors"
@@ -169,10 +169,10 @@ const Portfolio = () => {
               <div className="flex-1 flex flex-col justify-center px-8 md:px-20 gap-4 md:gap-8">
                {[
                  { title: "Structured Address Data Compilance", link: "https://github.com/" },
-                 { title: "Portfolio v1", link: "https://portfolio-peach-pi-70.vercel.app/" },
-                 { title: "Protochain", link: "https://github.com/shivamsinghx/ProtoChain" },
-                 { title: "Parallax", link: "https://github.com/shivamsinghx/ParallaxPractice1" },
-                 { title: "Poster", link: "https://github.com/shivamsinghx/AnyPoster" }
+                 { title: "Portfolio v1", link: "https://gaurav-profile.vercel.app/" },
+                 { title: "Movie-Finder", link: "https://movie-finder-two-kappa.vercel.app/" },
+                 { title: "Task manager", link: "https://zohoassignement-60051334413.catalystserverless.in" },
+                 { title: "De-fi investment", link: "https://github.com/ihimanshu07/De-fi-investment-platform.git" }
                ].map((project, i) => (
                  <motion.a
                    key={i}
@@ -191,9 +191,9 @@ const Portfolio = () => {
               <div className={`p-8 md:p-12 ${isDark ? "bg-[#111]" : "bg-black"} text-white flex flex-col md:flex-row justify-between items-center gap-4`}>
                  <div className="text-sm font-medium opacity-70">© WORLD IS A CRUEL PLACE.</div>
                  <div className="flex gap-6 text-sm font-bold">
-                    <a href="https://github.com/shivamsinghx" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-green-400">GITHUB</a>
-                    <a href="https://linkedin.com/in/shivamsingx" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-blue-600">LINKEDIN</a>
-                    <a href="https://x.com/dudeitsokay_" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-yellow-400">X</a>
+                    <a href="https://github.com/ihimanshu07" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-green-400">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/gauravsingh31/" target="_blank" rel="noreferrer" className="cursor-pointer hover:text-blue-600">LINKEDIN</a>
+                    
                  </div>
               </div>
           </motion.div>
@@ -211,7 +211,7 @@ const Portfolio = () => {
             transition={{ delay: 0.1, duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
             className="text-5xl md:text-7xl font-extrabold tracking-tight"
           >
-              <span className="font-normal">I'm</span> Shivam
+              <span className="font-normal">I'm</span> Gaurav
           </motion.h1>
 
           <motion.div 
@@ -231,7 +231,7 @@ const Portfolio = () => {
               transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1.0] }} 
               className="px-4 py-1.5 md:px-6 md:py-2 rounded-full bg-[#6ee786] text-black shadow-[0_0_20px_rgba(110,231,134,0.3)] cursor-default"
             >
-              Frontend React dev.
+              Fullstack dev.
             </motion.span>
           </motion.div>
 
@@ -241,7 +241,7 @@ const Portfolio = () => {
             transition={{ delay: 0.3, duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
             className="text-2xl md:text-5xl font-normal tracking-tight transition-colors duration-500 opacity-90"
           >
-            with an eye for{' '}
+            chasing ikigai{' '}
             <motion.span 
               className="relative inline-block px-1 z-10 cursor-pointer"
               initial={{ scale: 1, filter: "none" }}
@@ -256,7 +256,7 @@ const Portfolio = () => {
                  <HandDrawnHighlight color={theme.markerColor} className="w-full h-full opacity-90" />
                </div>
                <span className="relative z-10 font-bold text-inherit">
-                 UI & Design
+                  everyday.
                </span>
             </motion.span>
           </motion.h2>
@@ -275,18 +275,13 @@ const Portfolio = () => {
           <TechIcon Icon={SiNextdotjs} color={isDark ? "#ffffff" : "#000000"} label="Next.js" />
           
           <TechIcon Icon={SiFigma} color="#F24E1E" label="Figma" />
-          <TechIcon Icon={SiWebflow} color="#4353FF" label="Webflow" /> 
           <TechIcon Icon={SiTailwindcss} color="#06B6D4" label="Tailwind" />
-          <TechIcon Icon={SiSass} color="#CC6699" label="SCSS" />
           <TechIcon Icon={SiShadcnui} color={isDark ? "#ffffff" : "#000000"} label="ShadCN" />
           
-          <TechIcon Icon={SiFramer} color="#0055FF" label="Framer" />
           
           <TechIcon Icon={SiNodedotjs} color="#339933" label="Node.js" />
           <TechIcon Icon={SiExpress} color={isDark ? "#ffffff" : "#000000"} label="Express" />
-          <TechIcon Icon={SiPrisma} color="#2D3748" label="Prisma" />
           <TechIcon Icon={SiMongodb} color="#47A248" label="MongoDB" />
-          <TechIcon Icon={SiDocker} color="#2496ED" label="Docker" />
           <TechIcon Icon={SiPostman} color="#FF6C37" label="Postman" />
         </motion.div>
 
@@ -300,14 +295,11 @@ const Portfolio = () => {
          className={`fixed bottom-10 flex items-center gap-4 px-5 py-4 ${theme.dock} backdrop-blur-xl border rounded-full shadow-2xl z-50`}
 
         >
-          <DockIcon icon={<Github size={20} />} href="https://github.com/shivamsinghx" color={isDark ? "#ffffff" : "#000000"} label="GitHub" />
-          <DockIcon icon={<Linkedin size={20} />} href="https://linkedin.com/in/shivamsingx" color="#0A66C2" label="LinkedIn" />
-          <DockIcon icon={<SiX size={18} />} href="https://x.com/dudeitsokay_" color={isDark ? "#ffffff" : "#000000"} label="X" />
+          <DockIcon icon={<Github size={20} />} href="https://github.com/ihimanshu07" color={isDark ? "#ffffff" : "#000000"} label="GitHub" />
+          <DockIcon icon={<Linkedin size={20} />} href="https://www.linkedin.com/in/gauravsingh31/" color="#0A66C2" label="LinkedIn" />
+       
           
-          <DockIcon icon={<SiDiscord size={20} />} href="https://discord.com/" color="#5865F2" label="Discord" />
-          <DockIcon icon={<SiSteam size={20} />} href="https://steamcommunity.com/profiles/76561198980778931/" color={isDark ? "#66c0f4" : "#171a21"} label="Steam" />
-          
-          <ImageDockIcon src="/gmail.png" href="mailto:shivamsingx@gmail.com" label="Gmail" />
+          <ImageDockIcon src="/gmail.png" href="mailto:himanshu8115832782@gmail.com" label="Gmail" />
         </motion.div>
 
       </main>
